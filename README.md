@@ -1,4 +1,5 @@
 # A tool for efficient ECG record review
+**Goal:** To streamline ECG record review by providing arrhythmic beat predictions.
 
 Read the full [report](https://docs.google.com/document/d/1A7YLZp5M3NAQXLhJjCc-uEaCiXtDZwEu1opaEsnsBV4/edit?usp=sharing) and [presentation.](https://drive.google.com/file/d/1bteD6MTz_GhScgHWZbKFp2FX6kbGS7P_/view?usp=sharing)
 
@@ -9,8 +10,6 @@ Sample output from the app:
 
 After zooming into the boxed region with abnormal beats:
 <img src="Images/114_zoomed.png" width="750">
-
-**Goal:** To streamline ECG record review by providing arrhythmic beat predictions.
 
 **Background:** Arrhythmia diagnosis often requires doctors to review 24-48 h of ECG recordings where most of the beats are normal. This process is extremely time and labor-intensive. The present tool aims to reduce review time by automatically labeling the most likely abnormal beats. There are 5 major classes of heartbeats - N - normal, S - supraventricular ectopic beat, V - ventricular ectopic beat, F - fusion between normal and ventricular, and Q - unknown.
 
