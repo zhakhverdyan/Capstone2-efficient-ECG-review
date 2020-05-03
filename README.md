@@ -39,9 +39,9 @@ Next to minimize baseline drift, I applied a difference transformation, which si
 <img src="Images/before_after.png" width="500">
 
 **Dataset split**
-Training set: 101, 103, 105, 106, 109, 111, 112, 113, 115, 116, 117, 119, 121, 122, 123, 200, 201, 202, 205, 207, 208, 209, 212, 219, 221, 222, 230, 231, 232, 233
-Validation set: 100, 124, 215, 223
-Testing set: 108, 114, 118, 203, 210, 213, 214, 220, 228, 234
+* Training set: 101, 103, 105, 106, 109, 111, 112, 113, 115, 116, 117, 119, 121, 122, 123, 200, 201, 202, 205, 207, 208, 209, 212, 219, 221, 222, 230, 231, 232, 233
+* Validation set: 100, 124, 215, 223
+* Testing set: 108, 114, 118, 203, 210, 213, 214, 220, 228, 234
 
 | Dataset    | # of records | N count (%)  | S count (%) | V count (%) | F count (%) |
 |------------|--------------|--------------|-------------|-------------|-------------|
