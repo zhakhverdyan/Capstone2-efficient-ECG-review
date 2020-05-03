@@ -55,7 +55,7 @@ Testing set: 108, 114, 118, 203, 210, 213, 214, 220, 228, 234
 [Best model evaluation](Jupyter_notebooks/Model_fitting/CNN_best_model_evaluation.ipynb)
 
 I trained convolutional neural nets with following parameters:
-*1-4 layers 
+* 1-4 layers 
 * 16-72 nodes 
 * 3-6 kernel size
 * 0.2-0.5 dropout rate
