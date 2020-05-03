@@ -17,7 +17,7 @@ After zooming into the boxed region with abnormal beats:
 
 **Dataset:** MIT-BIH Arrhythmia dataset available at https://physionet.org/content/mitdb/1.0.0/
 
-**Challenges:** Abnormal beats account for a minority of >90k labeled beats in the dataset. Moreover, they are unevenly distributed. A useful model should successfully identify abnormal beats in unseen patients, hence the train, validation, and test split has to be performed on records as apposed to beats. So in some sense there are only 44 distinct examples, and classes S and F are poorly represented (figure below). Note, I excluded class Q (n=15) before analysis, since there were too few samples. Also, there are technical artifacts complicating the analysis (see feature engineering).
+**Challenges:** Abnormal beats account for a minority of >90k labeled beats in the dataset. Moreover, they are unevenly distributed. A useful model should successfully identify abnormal beats in unseen patients, hence the train, validation, and test split has to be performed on records as apposed to beats. So in some sense there are only 44 distinct examples, and classes S and F are poorly represented (figure below). Note, I excluded class Q (n=15) before analysis, since there were too few samples. Also, there are technical artifacts in the records (see feature engineering).
 
 <img src="Images/class_distribution.png" width="1000">
 
@@ -34,7 +34,7 @@ To overcome polarity inversion, a technical artifacts, I took the absolute value
 
 <img src="Images/raw_abs_value100_108_207.png" width="1000">
 
-Next to minimize baseline drift, I applied a difference transformation, which simply produces the difference of two consecutive points. In this way only the biggest changes in the signal are revealed and all the minor ones, such as the baseline drift, are silenced. See the summary graphs of raw data and after the absolute value and difference transformation.
+Next, to minimize baseline drift, I applied a difference transformation, which simply produces the difference of two consecutive points. In this way only the biggest changes in the signal are revealed and all the minor ones, such as the baseline drift, are silenced. See the summary graphs of raw data and after the absolute value and difference transformation.
 
 <img src="Images/before_after.png" width="500">
 
@@ -54,12 +54,12 @@ Next to minimize baseline drift, I applied a difference transformation, which si
 [Systematic CNN tuning](Jupyter_notebooks/Model_fitting/train_val_test_systematic_CNN_fits.ipynb)
 [Best model evaluation](Jupyter_notebooks/Model_fitting/CNN_best_model_evaluation.ipynb)
 
-I trained convolutional neural nets with following parameters:
+I trained convolutional neural nets with the following parameters:
 * 1-4 layers 
 * 16-72 nodes 
 * 3-6 kernel size
 * 0.2-0.5 dropout rate
-untill validation F1 score did not improve any more. Next, assessed the model performance on the test set.
+until validation F1 score did not improve anymore. Next, I assessed the model performance on the test set.
 Following is the training history of the best performing model:
 
 <img src="Images/best_model_training_history.png" width="400">
@@ -68,7 +68,7 @@ The model has high variance which is expected given the high inter-record variat
 
 Here is the confusion matrix for all classes:
 
-<img src="Images/best_model_conf_matrix.png" width="400">
+<img src="Images/best_model_conf_matrix.png" width="300">
 
 Although the recall for classes S anf F are small, additional 22% of S class and 28% of F class would be detected when reviewing V class predictions. Summary classification report:
 
