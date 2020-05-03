@@ -62,13 +62,13 @@ I trained convolutional neural nets with following parameters:
 untill validation F1 score did not improve any more. Next, assessed the model performance on the test set.
 Following is the training history of the best performing model:
 
-<img src="Images/best_model_training_history.png" width="250">
+<img src="Images/best_model_training_history.png" width="400">
 
 The model has high variance which is expected given the high inter-record variation and the small number of distinct records.
 
 Here is the confusion matrix for all classes:
 
-<img src="Images/best_model_conf_matrix.png" width="250">
+<img src="Images/best_model_conf_matrix.png" width="400">
 
 Although the recall for classes S anf F are small, additional 22% of S class and 28% of F class would be detected when reviewing V class predictions. Summary classification report:
 
