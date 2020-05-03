@@ -53,7 +53,8 @@ Testing set: 108, 114, 118, 203, 210, 213, 214, 220, 228, 234
 **Deep learning**
 [Systematic CNN tuning](Jupyter_notebooks/Model_fitting/train_val_test_systematic_CNN_fits.ipynb)
 [Best model evaluation](Jupyter_notebooks/Model_fitting/CNN_best_model_evaluation.ipynb)
-Trained convolutional neural nets with following parameters:
+
+I trained convolutional neural nets with following parameters:
 *1-4 layers 
 * 16-72 nodes 
 * 3-6 kernel size
