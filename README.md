@@ -26,7 +26,7 @@ After zooming into the boxed region with abnormal beats:
 [Heartbeat class exploration](Jupyter_notebooks/Processing/Class_exploration2.ipynb)
 [Feature extraction](Jupyter_notebooks/Processing/Difference_feature_extraction.ipynb)
 
-The QRS complex (heartbeat diagram below) is a prominent feature used to identify heartbeats in ECG trace. In the MIT-BIH-Arrhythmia dataset the beat annotation coordinates coincide with the QRS peak (see a sample labeled trace below). Since this project is not about ECG segmentation, I split up the signal based on beat label coordinates (+/- 0.5 sec for each annotation). This produced 360 points or features per beat (1 sec at 360 Hz frequency).
+The QRS complex (heartbeat diagram below) is a prominent feature used to identify heartbeats in an ECG trace. In the MIT-BIH-Arrhythmia dataset the beat annotation coordinates coincide with the QRS peaks (see a sample labeled trace below). Since this project is not about ECG segmentation, I split up the signal based on beat label coordinates (+/- 0.5 sec for each annotation). This produced 360 points or features per beat (1 sec at 360 Hz frequency).
 
 <img src="Images/canonical_heartbeat.png" width="400"><img src="Images/Sample_record_100.png" width="400">
 
