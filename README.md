@@ -32,7 +32,7 @@ The QRS complex (heartbeat diagram below) is a prominent feature used to identif
 
 To overcome polarity inversion, a technical artifacts, I took the absolute value of the signal (see figure below).
 
-<img src="Images/raw_abs_value100_108_207.png" width="500">
+<img src="Images/raw_abs_value100_108_207.png" width="1000">
 
 Next to minimize baseline drift, I applied a difference transformation, which simply produces the difference of two consecutive points. In this way only the biggest changes in the signal are revealed and all the minor ones, such as the baseline drift, are silenced. See the summary graphs of raw data and after the absolute value and difference transformation.
 
